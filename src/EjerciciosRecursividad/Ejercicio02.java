@@ -10,11 +10,9 @@ public class Ejercicio02 {
     }
 
     public static void recorrer(int[] lista, int i){
-        if (i>0) {
+        if (i>=0) {
             System.out.println(lista[i]);
             recorrer(lista, i-1);
-        } else {
-            System.out.println(lista[0]);
         }
     }
 }

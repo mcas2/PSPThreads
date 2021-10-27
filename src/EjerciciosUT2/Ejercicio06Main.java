@@ -9,6 +9,7 @@ public class Ejercicio06Main {
         int num = sc.nextInt();
 
         Ejercicio06 hilo = new Ejercicio06(num);
-
     }
+
+
 }
