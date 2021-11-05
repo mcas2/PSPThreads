@@ -7,6 +7,7 @@ public class Ejercicio14 implements Runnable {
     Thread t;
     Random r = new Random(1);
     int [] numList = new int[100000];
+    int [] numList2 = new int[100000];
     long startSeconds, endSeconds;
     double timeWasted;
 
@@ -24,6 +25,16 @@ public class Ejercicio14 implements Runnable {
         System.out.println("_________________________________________");
         System.out.println("_________________________________________");
         System.out.println(Arrays.toString(orderArray(numList)));
+        System.out.println("_________________________________________");
+        System.out.println("_________________________________________");
+        System.out.println("_________________________________________");
+
+        numList2 = fillArray();
+        System.out.println(Arrays.toString(numList2));
+        System.out.println("_________________________________________");
+        System.out.println("_________________________________________");
+        System.out.println("_________________________________________");
+        System.out.println(Arrays.toString(orderArray(numList2)));
         endSeconds = System.currentTimeMillis();
         timeWasted = (double) (endSeconds - startSeconds);
         System.out.println("_________________________________________");
