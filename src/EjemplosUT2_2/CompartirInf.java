@@ -2,7 +2,13 @@ package EjemplosUT2_2;
 
 public class CompartirInf {
     public static void main(String[] args) {
-        Contador cont = new Contador(100);
+        /*
+        * Podríamos utilizar una clase para decrementar y otra para incrementar
+        * en lugar de hacer 5 hilos como un gilipollas. Pueden salir distintos
+        * hilos de la misma clase.
+        * */
+
+        Contador cont = new Contador(0);
         HiloA a = new HiloA("HiloA",  cont);
         HiloB b = new HiloB("HiloB",  cont);
         HiloC c = new HiloC("HiloC",  cont);

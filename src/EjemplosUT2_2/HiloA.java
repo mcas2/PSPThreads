@@ -11,7 +11,7 @@ public class HiloA extends Thread {
     @Override
     public void run() {
         synchronized (contador) {
-            for (int i = 0; i < 300; i++) {
+            for (int i = 0; i < 5000; i++) {
                 contador.incrementa();
             }
             System.out.println(getName() + " contador vale " + contador.getValor());
