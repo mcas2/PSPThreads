@@ -9,10 +9,8 @@ public class SacarDinero extends Thread {
 	}
 
 	public void run() {
-		synchronized (c){
-			for (int x = 1; x <= 4; x++) {
-				c.retirarDinero(10, getName());
-			}
+		for (int x = 1; x <= 4; x++) {
+			c.retirarDinero(10, getName());
 		}
 	}
 }

@@ -15,7 +15,7 @@ public class Cuenta {
 		saldo = saldo - cantidad;
 	}
 
-	public void retirarDinero(int cant, String nom) {
+	synchronized void retirarDinero(int cant, String nom) {
 		if (getSaldo() >= cant) {
 			System.out.println(nom + ": SE VA A RETIRAR SALDO (ACTUAL ES: " + getSaldo() + ")");
 			try {
