@@ -2,7 +2,7 @@ package EjercicioUT2_Ordenar;
 
 import java.util.Random;
 
-public class libreriaOrdenar {
+public class LibreriaOrdenar {
     Random r = new Random();
     public void fillArray(int[] numbers){
         for (int i = 0; i < numbers.length; i++) {

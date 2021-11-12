@@ -1,11 +1,11 @@
 package EjercicioUT2_Ordenar;
 
-public class hiloOrdenar extends Thread {
+public class HiloOrdenar extends Thread {
     String nombre;
     int[] numbers;
-    libreriaOrdenar ordenar;
+    LibreriaOrdenar ordenar;
 
-    public hiloOrdenar(String nombre, int[] numbers, libreriaOrdenar ordenar){
+    public HiloOrdenar(String nombre, int[] numbers, LibreriaOrdenar ordenar){
         this.ordenar = ordenar;
         this.nombre = nombre;
         this.numbers = numbers;
