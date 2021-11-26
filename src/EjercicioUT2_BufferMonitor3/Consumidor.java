@@ -2,14 +2,22 @@ package EjercicioUT2_BufferMonitor3;
 
 public class Consumidor extends Thread {
     String nombre;
-    int cantidad;
-    public Consumidor(String nombre, int cantidad){
+    private BufferMonitor bf;
+
+    public Consumidor(String nombre, BufferMonitor bf){
         this.nombre = nombre;
-        this.cantidad =  cantidad;
+        this.bf = bf;
     }
 
     @Override
     public void run() {
-        super.run();
+        for (int i = 0; i < 250; i++) {
+            try {
+                sleep(5);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            bf.get(nombre);
+        }
     }
 }

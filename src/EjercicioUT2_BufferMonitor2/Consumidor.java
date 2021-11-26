@@ -3,7 +3,7 @@ package EjercicioUT2_BufferMonitor2;
 
 public class Consumidor extends Thread
 {
-    private BufferMonitor monitor;
+    BufferMonitor monitor;
 
     Consumidor(BufferMonitor monitor, String name)
     {
@@ -13,7 +13,6 @@ public class Consumidor extends Thread
 
     public void run()
     {
-
         for (int i = 0; i < 5; i++)
         {
             monitor.get(this.getName());
