@@ -8,16 +8,20 @@ public class BufferMonitor {
     boolean turnoPar = false;
 
     public synchronized void get (String nomen){
-        Integer resultado;
-        while (lista    .isEmpty()){
+        Integer resultado = lista.get(0);
+        while (lista.isEmpty()){
             try {
                 wait();
             } catch (InterruptedException e){
                 e.printStackTrace();
             }
         }
-        resultado = lista.remove(0);
-        System.out.println(resultado + " ");
+        if (resultado%2!=0){
+            resultado = lista.remove(0);
+            System.out.println(resultado + " ");
+        } else {
+            resultado = lista.remove(0);
+        }
         notifyAll();
     }
 
