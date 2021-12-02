@@ -1,5 +1,6 @@
 package EjerciciosRepasoUT2.BufferMonitor1;
-/*
+/*De parte de Rodrigo, Tirso y Mario
+
 * Crea un concesionario en el que varios talleres (3) produzcan coches de 3 gamas (Porsche, BMW y Seat).
 * Crea una serie de clientes (9) de distintas clases sociales (alta, media y baja) que sólo puedan comprar coches
 * que les resulten accesibles (porsche=alta, bmw=media y seat=baja).
