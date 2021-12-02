@@ -1,0 +1,5 @@
+Juan 5 7 8 3 9 10
+Ana 5 7 8 3 9 0 6 4 3
+Elena 5 7 8 9 9 10
+Andres 5 6 8 3 9 7 7
+Raquel 5 6 8 6 9 
