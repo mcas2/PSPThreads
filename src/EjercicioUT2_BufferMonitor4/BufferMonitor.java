@@ -16,12 +16,15 @@ public class BufferMonitor {
                 e.printStackTrace();
             }
         }
-        if (resultado%2!=0){
+        /* if (resultado%2!=0){
             resultado = lista.remove(0);
             System.out.println(resultado + " ");
         } else {
             resultado = lista.remove(0);
-        }
+        }*/
+
+        resultado = lista.remove(0);
+        System.out.println(resultado + " ");
         notifyAll();
     }
 
