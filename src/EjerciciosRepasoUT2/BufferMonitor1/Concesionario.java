@@ -6,6 +6,7 @@ public class Concesionario {
     ArrayList<String> escaparate = new ArrayList<>();
     String venta;
     String ultimo = "";
+    int cont = 0;
 
     public synchronized void producir (String modelo, String name){
         while   (escaparate.size()==30 || modelo.equals(ultimo)){
@@ -23,9 +24,9 @@ public class Concesionario {
 
     public synchronized void consumir(String clase, String nombre){
         while (escaparate.isEmpty()
-                ||(!escaparate.get(0).equals("Porsche")&&clase.equals("alta"))||
-                (!escaparate.get(0).equals("BMW")&&clase.equals("media"))||
-                (!escaparate.get(0).equals("Seat")&&clase.equals("baja"))
+                ||(!escaparate.get(0).contains("Porsche")&&clase.equals("alta"))||
+                (!escaparate.get(0).contains("BMW")&&clase.equals("media"))||
+                (!escaparate.get(0).contains("Seat")&&clase.equals("baja"))
         ){
             try {
                 ultimo = "";

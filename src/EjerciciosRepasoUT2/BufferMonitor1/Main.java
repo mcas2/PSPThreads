@@ -1,4 +1,18 @@
 package EjerciciosRepasoUT2.BufferMonitor1;
+/*
+* Crea un concesionario en el que varios talleres (3) produzcan coches de 3 gamas (Porsche, BMW y Seat).
+* Crea una serie de clientes (9) de distintas clases sociales (alta, media y baja) que sólo puedan comprar coches
+* que les resulten accesibles (porsche=alta, bmw=media y seat=baja).
+* El concesionario permite la producción de coches de marca alterna, de forma que no entren dos coches iguales seguidos
+* en el escaparate. El escaparate tiene un tamaño de 30 coches (es grande), y en el momento en el que este se llenara,
+* los talleres tendrían que esperar para producir más.
+*
+* Nuestra duda, Elisa, es básicamente la siguiente: ¿Por qué no acaba nuestro proceso dado este código? Si le quitamos
+* las condiciones del while del método consumir termina sin problema, pero sólo somos capaces de imaginar que en algún
+* momento las condiciones hacen un cuello de botella y no nos deja seguir.
+*
+* Muchas gracias y un abrazo.
+* */
 
 public class Main {
     public static void main(String[] args) {
